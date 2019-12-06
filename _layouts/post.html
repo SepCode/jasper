@@ -11,38 +11,31 @@ class: 'post-template'
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
-    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
-        {% if page.navigation %}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {% endif %}
-    </nav>
+<header class="main-header post-head no-cover">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button icon-arrow-left" href="/">Home</a>
+        <a class="rss-button icon-feed" href="/feed.xml"><span class="word">RSS</span></a>
+      </nav>
 </header>
 
 <main class="content" role="main">
 
     <article class="{{ page.subclass }}">
 
-        <header class="post-header">
+        <header class="post-template post-header">
             <h1 class="post-title">{{ page.title }}</h1>
             <section class="post-meta">
             <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
 
-            {% for author in site.data.authors %}
-                {% if author[1].username == page.author %}
-                    <a href='{{ site.baseurl }}author/{{ page.author }}'>{{ author[1].name }}</a>
-                {% endif %}
-            {% endfor %}
             <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
                 <!-- [[tags prefix=" on "]] -->
                 {% if page.tags.size > 0 %}
-                on
+                
                 {% for tag in page.tags %}
                     {% if forloop.index == page.tags.size %}
                        <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>
                     {% else %}
-                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a>,
+                       <a href='{{ site.baseurl }}tag/{{ tag }}'>{{ tag | capitalize }}</a> 
                     {% endif %}
                 {% endfor %}
                 {% endif %}
