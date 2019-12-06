@@ -1,13 +1,19 @@
 ---
 layout: page
-title: About
+title: 关于
 navigation: true
 logo: 'assets/images/ghost.png'
 current: about
 ---
 
-This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
 
-We use this for testing and for reference!
 
-If you'd like to set up your own blog, head on over to [https://ghost.org](https://ghost.org) and sign up.
+
+
+
+
+> 关于本站的建立，大家也许会看到熟悉的风格。本站很大程度上受启发于 面向信仰编程 博客站。笔者非常喜欢Jasper的整体风格，所以在其基础上修改建立本站。如果您同样喜欢该主题可点击右下角jasper仓库链接查看，如果喜欢修改版可在笔者的[jasper](https://github.com/SepCode/jasper)仓库查看。
+
+目前流行的编程范式有面向过程编程，面向对象编程，面向协议编程，函数式编程等等。**面向xx编程**在开发者心中有着无与伦比的重要性，笔者同样非常喜欢**信仰**这个词语，面向信仰编程 真的非常走心，非常的契合。但是这个词已经被draveness使用过了，所以建立本站时，笔者思考了很久应该起什么名字呢？虽然内容为王，但是名字也不能含糊。
+
+面向**原理**编程，面向**思维**编程，面向**未来**，**人生**，**生活**，**理想**...笔者又去查询了优美的二字词语，同样找不到比信仰更虔诚，更走心的词语。只有这个词了——**艺术**。但是笔者又害怕驾驭不了这个词，又折腾着下载了《计算机程序设计艺术》这本书。经过一番研读，最终还是决定命名本站为**面向艺术编程**。
