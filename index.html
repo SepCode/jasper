@@ -14,13 +14,10 @@ current: home
 <header class="main-header {% if page.cover %}"
         style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
     <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo"></a>
-        <a class="rss-button icon-feed" href="/feed.xml"><span class="word">RSS</span></a>
-        <!-- <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a> -->
-        <div class="search-wrap icon-search">
-            <input id="search-field" type="text" placeholder=" Search" style="font-family:Arial, FontAwesome">
-        </div>
-
+        {% if page.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ page.logo }}" alt="Blog Logo" /></a>{% endif %}
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
