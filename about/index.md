@@ -4,6 +4,7 @@ title: 关于
 navigation: true
 logo: 'assets/images/ghost.png'
 current: about
+cover: 'assets/images/cover4.jpg'
 ---
 
 
