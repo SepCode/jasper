@@ -7,14 +7,14 @@ paginate: 5
 language: 'en-uk'
 
 # Website info
-name: '面向艺术编程'
+name: 'SepCode'
 description: "SepCode's Blog"
 
 short_url: 'jekyller.github.io/jasper/'
 google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl:
+baseurl: /
 
 # Permalinks
 permalink: /:title
